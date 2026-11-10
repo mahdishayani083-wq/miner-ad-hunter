@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="داشبورد شکارچی آگهی ماینر">
+  <title>شکارچی آگهی ماینر</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">پروژه مستقل رصد آگهی‌ها</p>
+      <h1>شکارچی آگهی ماینر</h1>
+      <p>نسخه اولیه داشبورد برای بررسی آگهی‌های دستگاه‌های سری WhatsMiner M30</p>
+    </header>
+    <section class="stats" aria-label="آمار آگهی‌ها">
+      <article><span>کل آگهی‌ها</span><strong id="total">۰</strong></article>
+      <article><span>دارای قیمت</span><strong id="priced">۰</strong></article>
+      <article><span>بدون قیمت</span><strong id="unpriced">۰</strong></article>
+    </section>
+    <section class="panel">
+      <div class="filters">
+        <input id="search" type="search" placeholder="جستجو در عنوان یا شهر...">
+        <select id="model"><option value="">همه مدل‌ها</option><option>M30S</option><option>M30S+</option><option>M30S++</option></select>
+        <select id="status"><option value="">همه وضعیت‌ها</option><option>کارکرده</option><option>نو</option></select>
+        <select id="currency"><option value="">همه واحدها</option><option>تومان</option><option>ریال</option></select>
+      </div>
+      <p class="notice">این نسخه فقط با داده‌های نمونه و ساختگی نمایش داده می‌شود؛ هنوز به دیوار یا منبع واقعی متصل نیست.</p>
+      <div class="table-wrap"><table><thead><tr><th>عنوان آگهی</th><th>مدل</th><th>وضعیت</th><th>قیمت</th><th>شهر</th></tr></thead><tbody id="ads"></tbody></table></div>
+    </section>
+    <footer>نسخه ۰.۱ — مرحله اول: رابط کاربری و فیلترها</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
